@@ -11,7 +11,7 @@ public class Hamburger {
 
 
     private  double tomatoPrice = 2.19;
-    private double totalPriceTomato;
+
 
 
 
@@ -60,6 +60,7 @@ public class Hamburger {
         if (onionAmount > 0) {
 
             totalPrice *= this.onionPrice;
+
         }
         return totalPrice;
 
