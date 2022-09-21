@@ -36,6 +36,6 @@ public class Wall {
         }
         public double getArea (){
 
-                return this.width * this.height;
+                return Math.round(this.width * this.height);
         }
 }

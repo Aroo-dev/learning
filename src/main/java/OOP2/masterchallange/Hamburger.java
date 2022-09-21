@@ -1,30 +1,27 @@
 package OOP2.masterchallange;
 
+import java.math.BigDecimal;
+
 /**
  * Created by dev on 11/08/15.
  */
 public class Hamburger {
-    private  String name;
-    private  String meat;
-    private  double price = 4.30;
-    private  String breadRollType;
+    private String name;
+    private String meat;
+    private double price = 4.30;
+    private String breadRollType;
+    private double totalPrice;
+
+    private double tomatoPrice = 2.19;
 
 
-    private  double tomatoPrice = 2.19;
+    private double eggsPrice = 2.13;
+
+    private double onionPrice = 3.34;
 
 
 
-
-    private  double eggsPrice = 2.13;
-    private  double totalPriceEggs;
-
-    private String onion;
-    private  double onionPrice = 3.34;
-    private  double totalPriceOnion;
-
-
-    private  double sausagePrice = 2.13;
-    private  double totalPriceSausage;
+    private double sausagePrice = 2.13;
 
     public double getPrice() {
         return price;
@@ -37,53 +34,54 @@ public class Hamburger {
     }
 
     public double addHamburgerAddition1(int tomatoAmount) {
-            double totalPrice = tomatoAmount;
+        double additionalTomatoPrice = tomatoAmount;
 
         if (tomatoAmount > 0) {
 
-            totalPrice *= tomatoPrice;
+            additionalTomatoPrice *= tomatoPrice;
+
         }
+        this.totalPrice = this.totalPrice + additionalTomatoPrice;
         return totalPrice;
     }
 
     public double addHamburgerAddition2(int eggsAmount) {
-        double totalPrice = eggsAmount;
+        double totalAdditionalPrice = eggsAmount;
         if (eggsAmount > 0) {
 
-            totalPrice *= this.eggsPrice;
+            totalAdditionalPrice *= this.eggsPrice;
         }
-        return totalPrice;
+        this.totalPrice += totalAdditionalPrice;
+        return this.totalPrice;
     }
 
     public double addHamburgerAddition3(int onionAmount) {
-        double totalPrice = onionAmount;
+        double totalAdditionalPrice = onionAmount;
         if (onionAmount > 0) {
 
-            totalPrice *= this.onionPrice;
+            totalAdditionalPrice *= this.onionPrice;
 
         }
-        return totalPrice;
+        this.totalPrice += totalAdditionalPrice;
+        return this.totalPrice;
 
     }
 
     public double addHamburgerAddition4(int sausageAmount) {
-        double totalPrice = sausageAmount;
+        double totalAdditionalPrice = sausageAmount;
         if (sausageAmount > 0) {
 
-            totalPrice *= this.sausagePrice;
+            totalAdditionalPrice *= this.sausagePrice;
         }
-        return totalPrice;
-    }
-    public double burger (){
-
-        double totalPrice = this.price;
-        System.out.println("total price for burger is  = "  + totalPrice);
-        if (totalPriceTomato > 0){
-            totalPrice += totalPriceTomato;
-        }
-        return totalPrice;
+        this.totalPrice += totalAdditionalPrice;
+        return this.totalPrice;
     }
 
+    public double burger() {
+        System.out.println("your " + this.name + " contains  " + this.meat + " meat on a "
+                + this.breadRollType + " total price is:");
+        return  this.price + this.totalPrice;
 
 
+    }
 }
