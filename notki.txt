@@ -1,0 +1,8 @@
+ctrl + u - go to super method/super class
+ctrl + alt + left   - poprzednie miejsce, w ktorym bylem
+ctrl + b  - go to declaration / override method
+ctrl + alt + l -  reformat code
+ctrl + y  - kasuje linie, w ktorej jestem
+alt + j  - zaznaczanie tych samych wyrazow pojedynczo
+shift + f6 - rename class/methods
+
