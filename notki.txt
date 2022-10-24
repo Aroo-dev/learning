@@ -5,4 +5,7 @@ ctrl + alt + l -  reformat code
 ctrl + y  - kasuje linie, w ktorej jestem
 alt + j  - zaznaczanie tych samych wyrazow pojedynczo
 shift + f6 - rename class/methods
+ctrl + shift + n  =  wyszukiwanie plikow
+ctrl + alt + v =  tworzenie zmiennej
+
 

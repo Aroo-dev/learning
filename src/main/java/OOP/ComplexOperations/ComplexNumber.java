@@ -23,13 +23,7 @@ public class ComplexNumber {
         this.imaginary = this.imaginary + imaginary;
     }
 
-    @Override
-    public String toString() {
-        return "ComplexNumber{" +
-                "real=" + real +
-                ", imaginary=" + imaginary +
-                '}';
-    }
+
 
     public void add(ComplexNumber complexNumber) {
         this.imaginary += complexNumber.imaginary;

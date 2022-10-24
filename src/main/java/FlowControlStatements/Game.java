@@ -7,9 +7,10 @@ public class Game
 {
 
     public static void main(String[] args) {
-        int i = 0;
+        int  i = 0;
         int los;
         int odp;
+
 
         Random rnd = new Random();
         los = rnd.nextInt(10) + 1;

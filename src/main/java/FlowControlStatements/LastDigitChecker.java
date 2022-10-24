@@ -2,7 +2,7 @@ package FlowControlStatements;
 
 public class LastDigitChecker {
     public static void main(String[] args) {
-        boolean rightMostDigit = hasSameLastDigit(41, 22, 71);
+        boolean rightMostDigit = hasSameLastDigit(2,2,2);
         System.out.println(rightMostDigit);
     }
 

@@ -1,0 +1,4 @@
+ArrayList methods-
+array.add -  appends the specific element to the end of the list
+ex. public void addGroceryItem(String item) {
+            groceryList.add(item);

@@ -78,9 +78,12 @@ public class Hamburger {
     }
 
     public double burger() {
+
         System.out.println("your " + this.name + " contains  " + this.meat + " meat on a "
                 + this.breadRollType + " total price is:");
-        return  this.price + this.totalPrice;
+
+        return  totalPrice + price;
+
 
 
     }

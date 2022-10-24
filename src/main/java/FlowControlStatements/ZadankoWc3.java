@@ -1,5 +1,7 @@
 package FlowControlStatements;
 
+
+
 public class ZadankoWc3 {
     public static void main(String[] args) {
     boolean equal = areEqualByThreeDecimalPlaces(3.1746, 3.26333);
@@ -14,5 +16,7 @@ public class ZadankoWc3 {
         }
         return false;
     }
+
+
 
 }

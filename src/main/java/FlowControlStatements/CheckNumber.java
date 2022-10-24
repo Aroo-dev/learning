@@ -3,7 +3,8 @@ package FlowControlStatements;
 public class CheckNumber {
     public static void main(String[] args) {
 
-        checkNumber(0);
+        checkNumber(3);
+
 
     }
 

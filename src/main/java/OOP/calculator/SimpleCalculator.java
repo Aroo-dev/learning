@@ -23,7 +23,7 @@ public class SimpleCalculator {
     public double getAdditionResult(){
         return this.firstNumber + this.secondNumber;
     }
-    public double getSubstractionResult(){
+    public double getSubtractionResult(){
         return this.firstNumber - this.secondNumber;
     }
     public double getMultiplicationResult(){
